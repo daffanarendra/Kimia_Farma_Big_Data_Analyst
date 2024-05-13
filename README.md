@@ -108,9 +108,76 @@ select
 ```
 </details>
 <p align="center">
-  <img src="/Top 10 Total Transaksi Branch Province.jpeg">
+  <img src="/income from year to year.jpeg">
   <br>Fig.2. Comparison of kimia farma’s income from year to year</br>
  </p>
 
+2. Top 10 Total Transaksi Branch Province
+<details><summary>SQL Query</summary>
 
+```sql
+select provinsi,
+count(*) AS total_transaksi,
+sum(nett_sales) as total_pendapatan
+from
+  `kimia_farma.Analyst_Table` as Att
+group by
+provinsi
+order by 
+total_transaksi DESC
+limit 10
 
+```
+</details>
+<p align="center">
+  <img src="/income from year to year.jpeg">
+  <br>Fig.3. Top 10 Total Transaksi Branch Province</br>
+ </p>
+
+3. Top 10 Total Profit Branch Province
+<details><summary>SQL Query</summary>
+
+```sql
+select
+  provinsi, sum(nett_sales) as nett_sales_cabang, count(product_id) as total_produk_terjual
+from `kimia_farma.Analyst_Table`
+group by provinsi
+order by nett_sales_cabang desc
+limit 10
+```
+</details>
+<p align="center">
+  <img src="/income from year to year.jpeg">
+  <br>Fig.4. Top 10 Total Profit Branch Province</br>
+ </p>
+
+4. Top 5 Branches with the Highest Ratings, but Ratings Lowest Transactions
+<details><summary>SQL Query</summary>
+
+```sql
+SELECT branch_name,kota, AVG(rating_transaksi) AS avg_rating_transaksi, rating_cabang
+FROM `kimia_farma.Analyst_Table`
+GROUP BY branch_name,kota,rating_cabang
+ORDER BY rating_cabang desc, avg_rating_transaksi asc
+LIMIT 5;
+```
+</details>
+<p align="center">
+  <img src="/income from year to year.jpeg">
+  <br>Fig.5. Top 5 Branches with the Highest Ratings, but Ratings Lowest Transactions</br>
+ </p>
+
+## Create Dashboard Performance Analytics Kimia Farma Business Year 2020-2023
+Kimia Farma's 2020-2023 performance analysis dashboard was created in Google Looker Studio. This dashboard was created based on an analysis table that was previously created in BigQuery, so it is necessary to connect the table to Google Looker Studio.
+
+For Interactive Dashboard please click [this link](https://lookerstudio.google.com/reporting/429a8259-8aca-4151-ad7f-1a5d6ef194ba)
+
+The dashboard reveals several notable insights:
+
+- There was a remarkable surge in revenue in 2022, amounting to a 68% increase from 31 provincial branches, with total transactions reaching approximately 168 thousand. Notably, the West Java provincial branch recorded the highest total income and transactions.
+- This phenomenon can be attributed to the recovery phase from the COVID-19 pandemic, particularly with the prevalence of the Omicron variant in Indonesia alongside other health concerns. Omicron is characterized by mild symptoms, facilitating its rapid spread compared to other variants, prompting heightened public health consciousness.
+
+These insights can be translated into actionable marketing strategies:
+
+- Launch a health promotion campaign centered on post-pandemic wellness, emphasizing the rising demand for vitamins and essential health products like masks and hand sanitizers during the recovery phase.
+- Given the significant sales uptick in specific provinces, implement localized promotional initiatives tailored to each branch's context. Offer branch-specific discounts or incentives to foster customer loyalty and boost repeat purchases or transactions.
