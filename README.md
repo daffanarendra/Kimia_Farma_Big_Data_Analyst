@@ -87,11 +87,30 @@ left join
   `kimia_farma.kf_product` AS p ON ft.product_id = p.product_id
 ;
 ```
+</details>
 <p align="center">
-  <img src="/folder/data_mart.JPEG">
+  <img src="/Folder/Data_mart.jpeg">
   <br>Fig.1. Data Mart Design</br>
+ </p>
 
+## Analysis Table
+1. Comparison of kimia farma’s income from year to year
+<details><summary>SQL Query</summary>
 
+```sql
+select
+   extract(year FROM att.date ) as tahun,
+   SUM(nett_sales) as pendapatan,
+   AVG (nett_sales) as avg_pendapatan
+ from `kimia_farma.Analyst_Table` as att
+ group by tahun
+ order by tahun
+```
+</details>
+<p align="center">
+  <img src="/Top 10 Total Transaksi Branch Province.jpeg">
+  <br>Fig.2. Comparison of kimia farma’s income from year to year</br>
+ </p>
 
 
 
