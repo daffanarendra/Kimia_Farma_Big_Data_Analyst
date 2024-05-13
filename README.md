@@ -108,7 +108,7 @@ select
 ```
 </details>
 <p align="center">
-  <img src="/income from year to year.jpeg">
+  <img src="/Folder/income_from_year_to_year.jpeg">
   <br>Fig.2. Comparison of kimia farma’s income from year to year</br>
  </p>
 
@@ -130,7 +130,7 @@ limit 10
 ```
 </details>
 <p align="center">
-  <img src="/income from year to year.jpeg">
+  <img src="/Folder/Top_10_Total_Transaksi_Branch_Province.jpeg">
   <br>Fig.3. Top 10 Total Transaksi Branch Province</br>
  </p>
 
@@ -147,7 +147,7 @@ limit 10
 ```
 </details>
 <p align="center">
-  <img src="/income from year to year.jpeg">
+  <img src="/Folder/Top_10_Total_Profit_Branch_Province.jpeg">
   <br>Fig.4. Top 10 Total Profit Branch Province</br>
  </p>
 
@@ -163,7 +163,7 @@ LIMIT 5;
 ```
 </details>
 <p align="center">
-  <img src="/income from year to year.jpeg">
+  <img src="/Folder/Top_5_Branches_with_the_Highest_Ratings.png">
   <br>Fig.5. Top 5 Branches with the Highest Ratings, but Ratings Lowest Transactions</br>
  </p>
 
@@ -172,7 +172,7 @@ Kimia Farma's 2020-2023 performance analysis dashboard was created in Google Loo
 
 For Interactive Dashboard please click [this link](https://lookerstudio.google.com/reporting/429a8259-8aca-4151-ad7f-1a5d6ef194ba)
 
-![Image Alt text](Folder/dashboard.jpeg)
+![Image Alt text](Folder/Dashboard.png)
 <p align="center">Fig.7. Kimia Farma Performance Analytics Dashboard
 
 The dashboard reveals several notable insights:
