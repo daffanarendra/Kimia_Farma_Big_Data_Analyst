@@ -88,7 +88,7 @@ left join
 ;
 ```
 <p align="center">
-  <img src="/assets/data_mart_design.png">
+  <img src="/folder/data_mart.JPEG">
   <br>Fig.1. Data Mart Design</br>
 
 
