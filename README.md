@@ -172,6 +172,9 @@ Kimia Farma's 2020-2023 performance analysis dashboard was created in Google Loo
 
 For Interactive Dashboard please click [this link](https://lookerstudio.google.com/reporting/429a8259-8aca-4151-ad7f-1a5d6ef194ba)
 
+![Image Alt text](Folder/dashboard.jpeg)
+<p align="center">Fig.7. Kimia Farma Performance Analytics Dashboard
+
 The dashboard reveals several notable insights:
 
 - There was a remarkable surge in revenue in 2022, amounting to a 68% increase from 31 provincial branches, with total transactions reaching approximately 168 thousand. Notably, the West Java provincial branch recorded the highest total income and transactions.
